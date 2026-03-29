@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Links from './links';
 import { IoCart } from 'react-icons/io5';
+import { RiCloseCircleLine } from 'react-icons/ri';
+import { GiHamburgerMenu } from 'react-icons/gi';
 const navLinks = [
   {
     "name": "Products",
-    "id": 2,
+    "id": 1,
     "path": "/products"
   },
   {
@@ -30,14 +32,23 @@ const navLinks = [
 ]
 const Navbar = () => {
     const [changeColor, setChangeColor] = useState(true)
+    const [open, setOpen] = useState(false)
     const links = navLinks.map(navLink => <Links key={navLink.id} navLink = {navLink}></Links>)
     return (
         <header className='shadow-[0_2px_7px_rgba(0,0,0,0.1)]'>
-            <nav className='flex justify-between items-center'>
-                <div>
-                    <h2 className='text-4xl md:text-5xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent'><a href="#">DigiTools</a></h2>
+            <nav className='flex justify-between items-center w-11/12 lg:w-10/12 mx-auto py-4'>
+                <div  className='flex gap-2 items-center'>
+                    {
+                        open ? <RiCloseCircleLine onClick={() => setOpen(!open)} className='lg:hidden cursor-pointer text-indigo-600'></RiCloseCircleLine> : <GiHamburgerMenu onClick={() => setOpen(!open)} className='lg:hidden cursor-pointer text-indigo-600'></GiHamburgerMenu>
+                    }
+                    <ul className={`lg:hidden absolute top-22 bg-white shadow p-4 rounded space-y-4 ${open ? "block" : "hidden"}`}>
+                        {
+                            links
+                        }
+                    </ul>
+                    <h2 className='text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent'><a href="#">DigiTools</a></h2>
                 </div>
-                <ul className='md:flex hidden items-center gap-5'>
+                <ul className='lg:flex hidden items-center gap-5'>
                     {
                         links
                     }
