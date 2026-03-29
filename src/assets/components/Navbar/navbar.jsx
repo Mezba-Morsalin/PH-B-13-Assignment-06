@@ -54,10 +54,10 @@ const Navbar = () => {
                     }
                 </ul>
                 <div className='flex items-center gap-2.5'>
-                    <button className=' btn text-indigo-600 rounded-full text-2xl p-4 md:px-5 md:py-6'><IoCart></IoCart></button>
+                    <button className=' btn text-indigo-600 rounded-full text-base md:text-2xl p-4 md:px-5 md:py-6'><IoCart></IoCart></button>
                     <div className=" rounded-full border border-gray-200">
-                        <button onClick={() => setChangeColor(false)} className={` ${changeColor ?  " text-black font-bold rounded-full p-2 md:p-3 cursor-pointer" :  "bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-3 rounded-full font-bold cursor-pointer"} `}>Login</button>
-                    <button onClick={() => setChangeColor(!false)} className={` ${changeColor ?  "bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-3 rounded-full font-bold cursor-pointer" :  "text-black font-bold rounded-full p-2 md:p-3 cursor-pointer"} `}>Get Started</button>
+                        <button onClick={() => setChangeColor(false)} className={` ${changeColor ?  " text-black font-bold rounded-full p-2 md:p-2 cursor-pointer text-[12px] md:text-lg" :  "bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-2 text-[12px] md:text-lg rounded-full font-bold cursor-pointer"} `}>Login</button>
+                    <button onClick={() => setChangeColor(!false)} className={` ${changeColor ?  "bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-2 rounded-full font-bold cursor-pointer text-[12px] md:text-lg" :  "text-black font-bold rounded-full p-2 md:p-2 cursor-pointer text-[12px] md:text-lg"} `}>Get Started</button>
                     </div>
                 </div>
             </nav>
