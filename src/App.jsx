@@ -7,6 +7,7 @@ import Tools from './assets/components/Digi Tools/tools'
 import Step from './assets/components/Steps/step'
 import Pricing from './assets/components/Pricing/pricing'
 import WorkFlow from './assets/components/Workflow/workflow'
+import Footer from './assets/components/Footer/footer'
 
 
 const data = fetch('tools.json').then(res => res.json())
@@ -22,6 +23,7 @@ function App() {
      <Step></Step>
      <Pricing></Pricing>
      <WorkFlow></WorkFlow>
+     <Footer></Footer>
     </>
   )
 }

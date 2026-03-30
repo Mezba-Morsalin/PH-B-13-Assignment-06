@@ -14,7 +14,7 @@ const Tools = ({data}) => {
                 <div className='flex items-center gap-2.5 justify-center mb-10'>
                     <div className=" rounded-full border border-gray-200">
                     <button onClick={() => setChangeColor(!false)} className={` ${changeColor ?  "bg-linear-to-r from-violet-600 to-indigo-600 text-white p-3 md:p-4 rounded-full font-bold cursor-pointer text-[12px] md:text-lg" :  "text-black font-bold rounded-full p-3 md:p-4 cursor-pointer text-[12px] md:text-lg"} `}>Products</button>
-                        <button onClick={() => setChangeColor(false)} className={` ${changeColor ?  " text-black font-bold rounded-full p-3 md:p-4 cursor-pointer text-[12px] md:text-lg" :  "bg-linear-to-r from-violet-600 to-indigo-600 text-white p-3 md:p-4 text-[12px] md:text-lg rounded-full font-bold cursor-pointer"} `}>Cart {selectCart.length}</button>
+                        <button onClick={() => setChangeColor(false)} className={` ${changeColor ?  " text-black font-bold rounded-full p-3 md:p-4 cursor-pointer text-[12px] md:text-lg" :  "bg-linear-to-r from-violet-600 to-indigo-600 text-white p-3 md:p-4 text-[12px] md:text-lg rounded-full font-bold cursor-pointer"} `}>Cart ({selectCart.length})</button>
                     </div>
                 </div>
             </div>
