@@ -56,11 +56,9 @@ const Navbar = ({data}) => {
                     }
                 </ul>
                 <div className='flex items-center gap-2.5'>
-                    <div>
-                        <button className=' btn text-indigo-600 rounded-full text-base md:text-2xl p-4 md:px-5 md:py-6'><IoCart className='relative'></IoCart></button>
-    
-                            <p className='bg-red-500 text-white p-2 rounded-full text-[11px] absolute top-0'> {dataLength.length}</p>
-                        
+                    <div className='relative'>
+                        <button className=' btn text-indigo-600 rounded-full text-base md:text-2xl p-4 md:px-5 md:py-6'><IoCart ></IoCart></button>
+                                <p className=' bg-red-500 text-white p-1 rounded-full font-bold text-[11px] absolute top-0 right-0'> {dataLength.length}</p>
                     </div>
                     <div className=" rounded-full border border-gray-200">
                         <button onClick={() => setChangeColor(false)} className={` ${changeColor ?  " text-black font-bold rounded-full p-2 md:p-2 cursor-pointer text-[12px] md:text-lg" :  "bg-linear-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-2 text-[12px] md:text-lg rounded-full font-bold cursor-pointer"} `}>Login</button>

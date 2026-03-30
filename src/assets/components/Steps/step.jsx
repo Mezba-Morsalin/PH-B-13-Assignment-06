@@ -7,7 +7,7 @@ const Step = () => {
     return (
         
         <section className='w-11/12 lg:w-10/12 mx-auto mt-28'>
-            <div className='text-center space-x-3'>
+            <div className='text-center space-y-3'>
                 <h2 className='font-bold text-4xl md:text-5xl text-[#101727]'>Get Started in 3 Steps</h2>
                 <p className='text-[#627382] text-base'>Start using premium digital tools in minutes, not hours.</p>
             </div>

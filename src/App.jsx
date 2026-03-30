@@ -5,6 +5,7 @@ import Navbar from './assets/components/Navbar/navbar'
 import Rating from './assets/components/Rating/rating'
 import Tools from './assets/components/Digi Tools/tools'
 import Step from './assets/components/Steps/step'
+import Pricing from './assets/components/Pricing/pricing'
 
 
 const data = fetch('tools.json').then(res => res.json())
@@ -18,6 +19,7 @@ function App() {
      <Tools key={data.id} data = {data}></Tools>
      </Suspense>
      <Step></Step>
+     <Pricing></Pricing>
     </>
   )
 }
