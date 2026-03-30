@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaRegDotCircle } from 'react-icons/fa';
 import bannerImg from '../../Resources/banner.png'
+import { CiPlay1 } from 'react-icons/ci';
 const Hero = () => {
 
     return (
@@ -11,8 +12,8 @@ const Hero = () => {
                 <h2 className='text-[#101727] text-4xl md:text-7xl font-bold lg:w-3xl leading-12 md:leading-20'>Supercharge Your Digital Workflow</h2>
                 <p className='text-[#627382] text-base leading-7 lg:w-2xl'>Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products</p>
                 <div className='flex gap-3'>
-                    <button className='bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-3 md:p-4 rounded-full font-bold cursor-pointer'>Explore Products</button>
-                    <button className='p-2 md:p-3 rounded-full font-bold cursor-pointer border-2 border-indigo-600 text-indigo-600  hover:bg-gradient-to-r from-violet-600 to-indigo-600 hover:text-white'>Watch Demo</button>
+                    <button className='bg-linear-to-r from-violet-600 to-indigo-600 text-white p-3 md:p-4 rounded-full font-bold cursor-pointer'>Explore Products</button>
+                    <button className='p-2 md:p-3 rounded-full font-bold cursor-pointer border-2 border-indigo-600 text-indigo-600  hover:bg-linear-to-r from-violet-600 to-indigo-600 hover:text-white flex items-center gap-2.5'><CiPlay1 className='text-lg font-extrabold'></CiPlay1> Watch Demo</button>
                 </div>
             </div>
             <div>
