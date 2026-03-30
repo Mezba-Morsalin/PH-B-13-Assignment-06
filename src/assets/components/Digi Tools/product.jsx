@@ -1,0 +1,36 @@
+import React from 'react';
+import { TiTick } from 'react-icons/ti';
+
+const Product = ({toolData}) => {
+    return (
+        <div className='space-y-3.5 shadow-[0px_0px_12px_rgba(0,0,0,0.1)] p-7 rounded-2xl'>
+            <div className='flex justify-between items-center'>
+                <img className='h-14 w-14 border border-gray-200 rounded-full p-3' src={toolData.image} alt="" />
+                    <p
+                    className={`${
+                    toolData.tag === "Best Seller"
+                        ? "bg-yellow-200 text-orange-400 py-2 px-4 rounded-full"
+                        : toolData.tag === "Popular"
+                        ? "bg-indigo-100 text-violet-400 py-2 px-4 rounded-full"
+                        : "bg-green-100 text-green-500 py-2 px-4 rounded-full"
+                    }`}>{toolData.tag}
+                </p>
+        </div>
+        <h2 className='text-[#101727] font-bold text-2xl'>{toolData.name}</h2>
+        <p className='text-[#627382] text-base leading-7'>{toolData.description}</p>
+        <p className='text-2xl text-[#101727] font-bold'>{toolData.price}</p>
+        {
+            toolData.features.map((feature, index) =>  {
+                return (
+                    <div key={index}>
+                    <p className='flex items-center gap-2 text-[#627382] text-base'><TiTick className='text-green-500'></TiTick> {feature}</p>
+                </div>
+                )
+            })
+        }
+        <button className='bg-linear-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-2 rounded-full font-bold cursor-pointer text-[12px] md:text-lg w-full'>Buy Now</button>
+        </div>
+    );
+};
+
+export default Product;

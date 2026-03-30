@@ -46,7 +46,7 @@ const Navbar = () => {
                             links
                         }
                     </ul>
-                    <h2 className='text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent'><a href="#">DigiTools</a></h2>
+                    <h2 className='text-3xl md:text-4xl font-bold bg-linear-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent'><a href="#">DigiTools</a></h2>
                 </div>
                 <ul className='lg:flex hidden items-center gap-5'>
                     {
@@ -56,8 +56,8 @@ const Navbar = () => {
                 <div className='flex items-center gap-2.5'>
                     <button className=' btn text-indigo-600 rounded-full text-base md:text-2xl p-4 md:px-5 md:py-6'><IoCart></IoCart></button>
                     <div className=" rounded-full border border-gray-200">
-                        <button onClick={() => setChangeColor(false)} className={` ${changeColor ?  " text-black font-bold rounded-full p-2 md:p-2 cursor-pointer text-[12px] md:text-lg" :  "bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-2 text-[12px] md:text-lg rounded-full font-bold cursor-pointer"} `}>Login</button>
-                    <button onClick={() => setChangeColor(!false)} className={` ${changeColor ?  "bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-2 rounded-full font-bold cursor-pointer text-[12px] md:text-lg" :  "text-black font-bold rounded-full p-2 md:p-2 cursor-pointer text-[12px] md:text-lg"} `}>Get Started</button>
+                        <button onClick={() => setChangeColor(false)} className={` ${changeColor ?  " text-black font-bold rounded-full p-2 md:p-2 cursor-pointer text-[12px] md:text-lg" :  "bg-linear-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-2 text-[12px] md:text-lg rounded-full font-bold cursor-pointer"} `}>Login</button>
+                    <button onClick={() => setChangeColor(!false)} className={` ${changeColor ?  "bg-linear-to-r from-violet-600 to-indigo-600 text-white p-2 md:p-2 rounded-full font-bold cursor-pointer text-[12px] md:text-lg" :  "text-black font-bold rounded-full p-2 md:p-2 cursor-pointer text-[12px] md:text-lg"} `}>Get Started</button>
                     </div>
                 </div>
             </nav>
