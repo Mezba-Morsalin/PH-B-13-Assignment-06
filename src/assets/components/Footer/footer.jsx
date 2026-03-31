@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
             <div className='flex flex-col md:flex-row justify-between items-center p-5'>
                 <p className='text-[#FAFAFA] text-base'>&copy; 2026 DigiTools. All rights reserved.</p>
-                <div className='flex gap-6'>
+                <div className='flex flex-col md:flex-row gap-6 mt-6'>
                     <a className='text-[#FAFAFA] text-base' href="#">Privacy Policy </a>
                     <a className='text-[#FAFAFA] text-base' href="#">Terms of Service</a>
                     <a className='text-[#FAFAFA] text-base' href="#">Cookies</a>

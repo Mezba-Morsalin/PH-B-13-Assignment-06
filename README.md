@@ -1,16 +1,88 @@
-# React + Vite
+🚀 DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a modern and responsive SaaS landing page built with React.
+It showcases premium digital tools, workflow presentation, pricing plans, ratings, and a clean call-to-action based layout.
 
-Currently, two official plugins are available:
+This project demonstrates reusable components, structured folder organization, and responsive UI design using modern frontend technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌟 Features
+Modern Hero Section with strong CTA
+Premium Digital Tools showcase section
+Rating statistics display
+Workflow explanation section
+3-Step Getting Started guide
+Pricing Plans (Basic / Pro / Enterprise)
+Gradient-based modern UI
+Fully responsive design
+💻 Tech Stack
+React.js
+Tailwind CSS
+JavaScript (ES6+)
+Vite
+📂 Project Structure
+src/
+├── assets/
+├── components/
+├── DigiTools/
+│   ├── cart.jsx
+│   ├── product.jsx
+│   └── tools.jsx
+├── Footer/
+│   └── footer.jsx
+├── Hero/
+│   └── hero.jsx
+├── Navbar/
+│   ├── navbar.jsx
+│   └── links.jsx
+├── Pricing/
+│   ├── pricecard.jsx
+│   └── pricing.jsx
+├── Rating/
+│   └── rating.jsx
+├── Steps/
+│   └── step.jsx
+├── Workflow/
+│   └── workflow.jsx
+├── App.jsx
+└── main.jsx
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚡ Installation
+Clone the repository:
+git clone https://github.com/your-username/digitools.git
+Navigate into the project directory:
+cd digitools
+Install dependencies:
+npm install
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Running the Project
+
+Start the development server:
+
+npm run dev
+
+Open your browser and visit http://localhost:5173 to see the app in action.
+
+🛠 Build for Production
+
+Generate optimized build files:
+
+npm run build
+
+Preview the production build locally:
+
+npm run preview
+🌐 Live Demo
+
+Check out the live demo
+ (replace with your actual link)
+
+
+💡 Contributing
+
+Feel free to submit issues, fork the repo, and create pull requests. Contributions are always welcome!
+
+📄 License
+
+This project is licensed under the MIT License.

@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Hero from './assets/components/Hero/hero'
 import Navbar from './assets/components/Navbar/navbar'
@@ -12,14 +12,13 @@ import Footer from './assets/components/Footer/footer'
 
 const data = fetch('tools.json').then(res => res.json())
 function App() {
+  const [selectCart, setSelectCart] = useState([])
   return (
     <>
-     <Navbar key={data.id} data = {data}></Navbar>
+     <Navbar selectCart = {selectCart} setSelectCart = {setSelectCart}></Navbar>
      <Hero></Hero>
      <Rating></Rating>
-     <Suspense fallback = {<span className="loading loading-dots loading-xl flex justify-center items-center min-h-screen"></span>}>
-     <Tools key={data.id} data = {data}></Tools>
-     </Suspense>
+     <Tools data={data} selectCart={selectCart} setSelectCart={setSelectCart}/>
      <Step></Step>
      <Pricing></Pricing>
      <WorkFlow></WorkFlow>

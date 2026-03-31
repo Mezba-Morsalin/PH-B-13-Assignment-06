@@ -1,11 +1,10 @@
-import React, { use, useState } from 'react';
+import React, { Suspense, use, useState } from 'react';
 import Product from './product';
 import Cart from './cart';
-const Tools = ({data}) => {
+const Tools = ({data, selectCart, setSelectCart}) => {
     const [changeColor, setChangeColor] = useState(true)
-    const [selectCart, setSelectCart] = useState([])
     const useData = use(data)
-    const toolsData = useData.map(toolData => <Product key={toolData.id} toolData = {toolData}></Product>)
+    const toolsData = useData.map(toolData => <Product selectCart = {selectCart} setSelectCart = {setSelectCart} key={toolData.id} toolData = {toolData}></Product>)
     return (
         <section className='w-11/12 lg:w-10/12 mx-auto mt-28'>
             <div className='space-y-5'>
@@ -19,11 +18,13 @@ const Tools = ({data}) => {
                 </div>
             </div>
             {
-                changeColor ? <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
+                changeColor ? <Suspense fallback = {<span className="loading loading-ring loading-xl"></span>}>
+                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
                     toolsData
                 }
-            </div> : <Cart selectCart = {selectCart} setSelectCart = {setSelectCart}></Cart>
+            </div>
+                </Suspense> : <Cart selectCart = {selectCart} setSelectCart = {setSelectCart}></Cart>
             }
         </section>
     );
