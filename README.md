@@ -49,9 +49,9 @@ src/
 
 ⚡ Installation
 Clone the repository:
-git clone https://github.com/your-username/digitools.git
+git clone https://github.com/Mezba-Morsalin/PH-B-13-Assignment-06
 Navigate into the project directory:
-cd digitools
+cd DigiTools
 Install dependencies:
 npm install
 
@@ -76,7 +76,7 @@ npm run preview
 🌐 Live Demo
 
 Check out the live demo
- (replace with your actual link)
+ (https://mezba-digi-tools-a06.netlify.app/)
 
 
 💡 Contributing

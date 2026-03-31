@@ -34,14 +34,14 @@ const Cart = ({ selectCart, setSelectCart }) => {
             ) : (
                 selectCart.map((selected, index) => (
                     <div key={index} className="bg-gray-200 rounded-2xl p-4 flex flex-col md:flex-row justify-between items-center gap-4 text-center lg:text-left">
-                        <img className="w-14" src={selected.image} alt={selected.name} />
-                        <div className="flex-1 px-4">
-                            <h3 className="font-bold text-2xl">{selected.title}</h3>
+                        <img className="w-14" src={selected.image} alt={selected.image} />
+                        <div className="flex-1 px-4 space-y-2.5">
+                            <h3 className="font-bold text-2xl">{selected.name}</h3>
                             <p className="text-black/50">{selected.description}</p>
-                        </div>
-                        <p className= "font-bold text-xl">
+                             <p className= "font-bold text-xl">
                             ${selected.price}
                         </p>
+                        </div>
 
                         <button onClick={() => handleSelect(selected)} className="text-red-500 ml-4 cursor-pointer">
                             <MdDeleteForever className="text-3xl" />
