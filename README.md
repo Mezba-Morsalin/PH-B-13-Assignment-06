@@ -21,28 +21,29 @@ JavaScript (ES6+)
 Vite
 📂 Project Structure
 src/
+src/
 ├── assets/
 ├── components/
 ├── DigiTools/
-│   ├── cart.jsx
-│   ├── product.jsx
-│   └── tools.jsx
+│ ├── cart.jsx
+│ ├── product.jsx
+│ └── tools.jsx
 ├── Footer/
-│   └── footer.jsx
+│ └── footer.jsx
 ├── Hero/
-│   └── hero.jsx
+│ └── hero.jsx
 ├── Navbar/
-│   ├── navbar.jsx
-│   └── links.jsx
+│ ├── navbar.jsx
+│ └── links.jsx
 ├── Pricing/
-│   ├── pricecard.jsx
-│   └── pricing.jsx
+│ ├── pricecard.jsx
+│ └── pricing.jsx
 ├── Rating/
-│   └── rating.jsx
+│ └── rating.jsx
 ├── Steps/
-│   └── step.jsx
+│ └── step.jsx
 ├── Workflow/
-│   └── workflow.jsx
+│ └── workflow.jsx
 ├── App.jsx
 └── main.jsx
 
@@ -50,9 +51,13 @@ src/
 ⚡ Installation
 Clone the repository:
 git clone https://github.com/Mezba-Morsalin/PH-B-13-Assignment-06
+
 Navigate into the project directory:
+
 cd DigiTools
+
 Install dependencies:
+
 npm install
 
 
@@ -62,7 +67,8 @@ Start the development server:
 
 npm run dev
 
-Open your browser and visit http://localhost:5173 to see the app in action.
+Open your browser and visit
+ http://localhost:5173 to see the app in action.
 
 🛠 Build for Production
 
