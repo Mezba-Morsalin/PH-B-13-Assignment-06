@@ -14,10 +14,12 @@ Workflow explanation section
 Pricing Plans (Basic / Pro / Enterprise)
 Gradient-based modern UI
 Fully responsive design
-💻 Tech Stack
+💻 Tech Stack :
 React.js
-Tailwind CSS
+Tailwind CSS, Daisy UI
 JavaScript (ES6+)
+React-Toastify (NPM Package)
+JSON (for product data)
 Vite
 📂 Project Structure
 src/
