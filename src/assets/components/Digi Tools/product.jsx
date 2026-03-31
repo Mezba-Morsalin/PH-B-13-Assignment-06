@@ -32,8 +32,7 @@ const Product = ({ toolData, selectCart, setSelectCart }) => {
                 </p>
             ))}
 
-            <button onClick={handleBuy} disabled={isInCart}
-                className={ isInCart
+            <button onClick={handleBuy} disabled={isInCart} className={ isInCart
                         ? "w-full p-4 text-xl bg-gray-200 text-black/20 rounded-2xl font-bold cursor-not-allowed"
                         : "w-full p-4 text-xl bg-linear-to-r from-violet-600 to-indigo-600 text-white rounded-2xl font-bold  cursor-pointer"}>
                 {isInCart ? "Purchased" : "Buy now"}
